@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dotify MP3-Player: Web App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8d06859f5e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <img class="logo-img" src="img/dotify.png" "><h2 class="text">Dotify MP3-Player :&nbsp;&nbsp; Web App</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="music-player">
+            <div class="player">
+                <img src="img/dotify record.png" alt="record" class="record">
+                <h2 id="title">No Music Playing</h2>
+                <div class="slide-container">
+                    <i class="fas fa-volume-down"></i>
+                    <input type="range" min="0" max="100" value="50" class="slider">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+
+                <div class="controls">
+                    <button class="previous" id="previous"><i class="fas fa-step-backward"></i></button>
+                    <button class="play-pause" id="play-pause"><i class="fas fa-play-circle"></i></button>
+                    <button class="next" id="next"><i class="fas fa-step-forward"></i></button>
+                </div>
+            </div>
+            <div class="playlist">
+                <h2>Playlist</h2>
+                <ul class="song-list">
+                    <!--eventually, get some php in here to use a database-->
+                    <li data-src="music/Blond/01 Nikes.mp3" data-name="Nikes" data-index="0"><span>Nikes</span><span>05:14</span></li>
+                    <li data-src="music/Blond/02 Ivy.mp3" data-name="Ivy" data-index="1"><span>Ivy</span><span>04:09</span></li>
+                    <li data-src="music/Blond/03 Pink + White.mp3" data-name="Pink + White" data-index="2"><span>Pink + White</span><span>03:04</span></li>
+                    <li data-src="music/Blond/04 Be Yourself.mp3" data-name="Be Yourself" data-index="3"><span>Be Yourself</span><span>01:26</span></li>
+                    <li data-src="music/Blond/05 Solo.mp3" data-name="Solo" data-index="4"><span>Solo</span><span>04:17</span></li>
+                    <li data-src="music/Blond/06 Skyline To.mp3" data-name="Skyline To" data-index="5"><span>Skyline To</span><span>03:04</span></li>
+                    <li data-src="music/Blond/07 Self Control.mp3" data-name="Self Control" data-index="6"><span>Self Control</span><span>04:09</span></li>
+                    <li data-src="music/Blond/08 Good Guy.mp3" data-name="Good Guy" data-index="7"><span>Good Guy</span><span>01:06</span></li>
+                    <li data-src="music/Blond/09 Nights.mp3" data-name="Nights" data-index="8"><span>Nights</span><span>05:07</span></li>
+                    <li data-src="music/Blond/10 Solo (Reprise).mp3" data-name="Solo (Reprise)" data-index="9"><span>Solo (Reprise)</span><span>01:18</span></li>
+                    <li data-src="music/Blond/11 Pretty Sweet.mp3" data-name="Pretty Sweet" data-index="10"><span>Pretty Sweet</span><span>02:38</span></li>
+                    <li data-src="music/Blond/12 Facebook Story.mp3" data-name="Facebook Story" data-index="11"><span>Facebook Story</span><span>01:08</span></li>
+                    <li data-src="music/Blond/13 Close To You.mp3" data-name="Close To You" data-index="12"><span>Close To You</span><span>01:25</span></li>
+                    <li data-src="music/Blond/14 White Ferrai.mp3" data-name="White Ferrai" data-index="13"><span>White Ferrai</span><span>04:08</span></li>
+                    <li data-src="music/Blond/15 Seigfried.mp3" data-name="Seigfried" data-index="14"><span>Seigfried</span><span>05:34</span></li>
+                    <li data-src="music/Blond/16 Godspeed.mp3" data-name="Godspeed" data-index="15"><span>Godspeed</span><span>02:57</span></li>
+                    <li data-src="music/Blond/17 Futura Free.mp3" data-name="Nikes" data-index="16"><span>Futura Free</span><span>09:24 </span></li>
+                </ul>
+
+                <audio src="" id="audio"></audio>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
